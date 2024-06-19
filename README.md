@@ -4,8 +4,6 @@ A small graphical representation that is used to visually represent an action or
 ## Specifications
 The icon specifications on Zeroheight is [here](https://spark.adevinta.com/1186e1705/p/11373f-icon).
 
-![Figma anatomy](https://github.com/adevinta/spark-ios-component-icon/blob/main/.github/assets/anatomy.png)
-
 ## Usage
 Icon is available on UIKit and SwiftUI.
 
