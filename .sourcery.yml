@@ -3,50 +3,11 @@ configurations:
       include:
         - Sources/
       exclude:
-        - Sources/SparkIconTesting/
-        - Sources/SparkIconSnapshotTesting/
+        - Sources/Testing/
+        - Sources/SnapshotTesting/
     templates:
-      - ../spark-ios-common/.sourcery/template/SparkAutoMockable.stencil
-    output: Sources/SparkIconTesting/Generated/AutoMockable.generated.swift
-    args:
-      autoMockableImports: [Combine, SparkTheming]
-      autoMockableSPIImports: [SparkCommon, SparkCommonTesting, SparkThemingTesting]
-      autoMockableTestableImports: [SparkIcon]
-  - sources:
-      include:
-        - Sources/
-      exclude:
-        - Sources/SparkIconTesting/
-        - Sources/SparkIconSnapshotTesting/
-    templates:
-      - ../spark-ios-common/.sourcery/template/SparkAutoMockTest.stencil
-    output: Sources/SparkIconTesting/Generated/AutoMockTest.generated.swift
-    args:
-      autoMockableImports: [Combine, SparkTheming]
-      autoMockableSPIImports: [SparkCommon, SparkCommonTesting, SparkThemingTesting]
-      autoMockableTestableImports: [SparkIcon]
-  - sources:
-      include:
-        - Sources/
-      exclude:
-        - Sources/SparkIconTesting/
-        - Sources/SparkIconSnapshotTesting/
-    templates:
-      - ../spark-ios-common/.sourcery/template/SparkAutoPublisherTest.stencil
-    output: Sources/SparkIconTesting/Generated/AutoPublisherTest.generated.swift
-    args:
-      autoMockableImports: [Combine, SparkTheming]
-      autoMockableSPIImports: [SparkCommon, SparkCommonTesting, SparkThemingTesting]
-      autoMockableTestableImports: [SparkIcon]
-  - sources:
-      include:
-        - Sources/
-      exclude:
-        - Sources/SparkIconTesting/
-        - Sources/SparkIconSnapshotTesting/
-    templates:
-      - ../spark-ios-common/.sourcery/template/SparkAutoViewModelStub.stencil
-    output: Sources/SparkIconTesting/Generated/AutoViewModelStub.generated.swift
+      - ../spark-ios-common/.sourcery/template/
+    output: Sources/Testing/Generated/Sourcery.generated.swift
     args:
       autoMockableImports: [Combine, SparkTheming]
       autoMockableSPIImports: [SparkCommon, SparkCommonTesting, SparkThemingTesting]
