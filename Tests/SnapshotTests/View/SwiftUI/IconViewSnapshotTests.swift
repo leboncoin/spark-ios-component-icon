@@ -12,7 +12,7 @@ import SnapshotTesting
 @testable import SparkIcon
 @_spi(SI_SPI) import SparkCommonSnapshotTesting
 import SparkTheming
-import SparkThemingTesting
+@_spi(SI_SPI) import SparkThemingTesting
 import SparkTheme
 
 final class IconViewSnapshotTests: SwiftUIComponentSnapshotTestCase {
