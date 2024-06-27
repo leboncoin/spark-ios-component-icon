@@ -162,9 +162,9 @@ final class IconViewModelTests: XCTestCase {
             getColorUseCase: self.getColorUseCase
         )
 
-        self.sut.$color.sink { _ in
+        self.sut.$color.sink(receiveValue: { _ in
             expectation.fulfill()
-        }
+        })
         .store(in: &self.cancellables)
 
         // WHEN
@@ -185,9 +185,9 @@ final class IconViewModelTests: XCTestCase {
             getColorUseCase: self.getColorUseCase
         )
 
-        self.sut.$size.sink { _ in
+        self.sut.$size.sink(receiveValue: { _ in
             expectation.fulfill()
-        }
+        })
         .store(in: &self.cancellables)
 
         // WHEN
