@@ -10,7 +10,7 @@ import Combine
 import XCTest
 @testable import SparkIcon
 @_spi(SI_SPI) @testable import SparkIconTesting
-import SparkThemingTesting
+@_spi(SI_SPI) import SparkThemingTesting
 
 final class IconViewModelTests: XCTestCase {
 
