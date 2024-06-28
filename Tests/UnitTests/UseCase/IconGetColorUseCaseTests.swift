@@ -9,7 +9,7 @@
 import SwiftUI
 import XCTest
 @testable import SparkIcon
-import SparkThemingTesting
+@_spi(SI_SPI) import SparkThemingTesting
 import SparkTheming
 import SparkTheme
 
