@@ -3,7 +3,7 @@
 //  Spark
 //
 //  Created by Jacklyn Situmorang on 11.07.23.
-//  Copyright © 2023 Adevinta. All rights reserved.
+//  Copyright © 2023 Leboncoin. All rights reserved.
 //
 
 import Combine
@@ -173,5 +173,4 @@ public final class IconUIView: UIView {
         self._width.update(traitCollection: traitCollection)
         self.updateIconSize()
     }
-
 }
