@@ -1,56 +1,65 @@
 # Icon
-A small graphical representation that is used to visually represent an action or feature.
+
+**Spark** is the [Leboncoin](https://www.leboncoin.fr/)'s _Design System_.
+
+The repository here contains only the **iOS Icon** for _SwiftUI_ and _UIKit_.
+
+You can also see all of our Spark iOS repositories on [Github](https://github.com/orgs/leboncoin/repositories?q=spark-ios+sort%3Aname-asc).
 
 ## Specifications
+
 The icon specifications on Zeroheight is [here](https://spark.adevinta.com/1186e1705/p/11373f-icon).
 
-## Usage
-Icon is available on UIKit and SwiftUI.
+## Technical Documentation
 
-### IconUIView
-Parameters:
-* `iconImage`: The image to present.
-* `theme`: The current Spark-Theme. [You can always define your own theme.](https://github.com/adevinta/spark-ios/wiki/Theming#your-own-theming)
-* `intent`: The intent of icon, e.g. alert, neutral
-* `size`: The size of icon, e.g. small, large
+You are a developer ? A technical documentation in _DocC_ is available [here](https://leboncoin.github.io/spark-ios-component-icon/).
 
-### IconView
-Parameters:
-* `theme`: The current Spark-Theme. [You can always define your own theme.](https://github.com/adevinta/spark-ios/wiki/Theming#your-own-theming)
-* `intent`: The intent of icon, e.g. alert, neutral
-* `size`: The size of icon, e.g. small, large
-* `iconImage`: The image to present.
+### Swift Package Manager
 
-## Examples
-### IconUIView
+_Note: Instructions below are for using **SPM** without the Xcode UI. It's the easiest to go to your Project Settings -> Swift Packages and add SparkIcon from there._
+
+To integrate using Apple's Swift package manager, without Xcode integration, add the following as a dependency to your `Package.swift`:
 
 ```swift
-let icon = IconUIView(
-  iconImage: UIImage(systemName: "lock.circle"),
-  theme: theme,
-  intent: intent,
-  size: .small
-)
-
-view.addSubview(icon)
-NSLayoutConstraint.activate([
-  icon.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-  icon.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-  icon.topAnchor.constraint(equalTo: view.topAnchor),
-  icon.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-])
+.package(url: "https://github.com/leboncoin/spark-ios-component-icon.git", .upToNextMajor(from: "1.0.0"))
 ```
 
-### IconView
+and then specify `SparkIcon` as a dependency of the Target in which you wish to use the SparkIcon.
+
+Here's an example `Package.swift`:
+
 ```swift
-var body: some View {
-    IconView(
-        theme: SparkTheme.shared,
-        intent: self.intent,
-        size: self.size,
-        iconImage: Image("lock.circle")
-    )
-}
+// swift-tools-version:5.9
+import PackageDescription
+
+let package = Package(
+    name: "MyPackage",
+    platforms: [
+        .iOS(.v16)
+    ],
+    products: [
+        .library(
+            name: "MyPackage",
+            targets: ["MyPackage"]),
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/leboncoin/spark-ios-component-icon.git",
+            .upToNextMajor(from: "1.0.0")
+        )
+    ],
+    targets: [
+        .target(
+            name: "MyPackage",
+            dependencies: [
+                .product(
+                    name: "SparkIcon",
+                    package: "spark-ios-component-icon"
+                ),
+            ]
+        )
+    ]
+)
 ```
 
 ## License
@@ -58,7 +67,7 @@ var body: some View {
 ```
 MIT License
 
-Copyright (c) 2024 Adevinta
+Copyright (c) 2024 Leboncoin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
