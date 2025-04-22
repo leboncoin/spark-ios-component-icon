@@ -22,20 +22,22 @@ struct IconGetColorUseCase: IconGetColorUseCaseable {
         switch intent {
         case .accent:
             return colors.accent.accent
-        case .basic:
-            return colors.basic.basic
         case .alert:
             return colors.feedback.alert
+        case .basic:
+            return colors.basic.basic
         case .error:
             return colors.feedback.error
-        case .neutral:
-            return colors.feedback.neutral
+        case .info:
+            return colors.feedback.info
         case .main:
             return colors.main.main
-        case .support:
-            return colors.support.support
+        case .neutral:
+            return colors.feedback.neutral
         case .success:
             return colors.feedback.success
+        case .support:
+            return colors.support.support
         }
     }
 }
