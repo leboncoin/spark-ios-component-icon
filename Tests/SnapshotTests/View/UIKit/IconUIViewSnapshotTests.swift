@@ -1,13 +1,13 @@
 //
 //  IconUIViewSnapshotTests.swift
-//  SparkIcon
+//  SparkComponentIcon
 //
 //  Created by Jacklyn Situmorang on 17.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
 //
 
 import XCTest
-@testable import SparkIcon
+@testable import SparkComponentIcon
 @_spi(SI_SPI) import SparkCommonSnapshotTesting
 import SparkTheme
 

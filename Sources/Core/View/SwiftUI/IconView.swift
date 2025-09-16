@@ -25,7 +25,7 @@ public struct IconView: View {
     ///   - intent: Intent of icon
     ///   - size: Size of icon
     public init(
-        theme: Theme,
+        theme: any Theme,
         intent: IconIntent,
         size: IconSize,
         iconImage: Image

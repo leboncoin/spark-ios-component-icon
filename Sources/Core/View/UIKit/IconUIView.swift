@@ -26,7 +26,7 @@ public final class IconUIView: UIView {
     }
 
     /// Used theme for the icon.
-    public var theme: Theme {
+    public var theme: any Theme {
         get {
             return self.viewModel.theme
         }
@@ -85,7 +85,7 @@ public final class IconUIView: UIView {
 
     public init(
         iconImage: UIImage?,
-        theme: Theme,
+        theme: any Theme,
         intent: IconIntent,
         size: IconSize
     ) {
