@@ -16,7 +16,7 @@ You are a developer ? A technical documentation in _DocC_ is available [here](ht
 
 ### Swift Package Manager
 
-_Note: Instructions below are for using **SPM** without the Xcode UI. It's the easiest to go to your Project Settings -> Swift Packages and add SparkIcon from there._
+_Note: Instructions below are for using **SPM** without the Xcode UI. It's the easiest to go to your Project Settings -> Swift Packages and add SparkComponentIcon from there._
 
 To integrate using Apple's Swift package manager, without Xcode integration, add the following as a dependency to your `Package.swift`:
 
@@ -24,7 +24,7 @@ To integrate using Apple's Swift package manager, without Xcode integration, add
 .package(url: "https://github.com/leboncoin/spark-ios-component-icon.git", .upToNextMajor(from: "1.0.0"))
 ```
 
-and then specify `SparkIcon` as a dependency of the Target in which you wish to use the SparkIcon.
+and then specify `SparkComponentIcon` as a dependency of the Target in which you wish to use the SparkComponentIcon.
 
 Here's an example `Package.swift`:
 
@@ -53,7 +53,7 @@ let package = Package(
             name: "MyPackage",
             dependencies: [
                 .product(
-                    name: "SparkIcon",
+                    name: "SparkComponentIcon",
                     package: "spark-ios-component-icon"
                 ),
             ]

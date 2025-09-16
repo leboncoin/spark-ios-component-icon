@@ -1,6 +1,6 @@
 //
 //  IconViewModel.swift
-//  SparkIcon
+//  SparkComponentIcon
 //
 //  Created by Jacklyn Situmorang on 11.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
@@ -13,9 +13,9 @@ final class IconViewModel: ObservableObject {
 
     // MARK: - Properties
 
-    private(set) var theme: Theme
+    private(set) var theme: any Theme
     private(set) var intent: IconIntent
-    private let getColorUseCase: IconGetColorUseCaseable
+    private let getColorUseCase: any IconGetColorUseCaseable
 
     // MARK: - Published properties
 
@@ -25,10 +25,10 @@ final class IconViewModel: ObservableObject {
     // MARK: - Initializers
 
     init(
-        theme: Theme,
+        theme: any Theme,
         intent: IconIntent,
         size: IconSize,
-        getColorUseCase: IconGetColorUseCaseable = IconGetColorUseCase()
+        getColorUseCase: any IconGetColorUseCaseable = IconGetColorUseCase()
     ) {
         self.theme = theme
         self.intent = intent
@@ -39,7 +39,7 @@ final class IconViewModel: ObservableObject {
 
     // MARK: - Setters
 
-    func set(theme: Theme) {
+    func set(theme: any Theme) {
         self.theme = theme
         self.updateColor()
     }

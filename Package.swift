@@ -5,18 +5,18 @@ import PackageDescription
 
 // swiftlint:disable all
 let package = Package(
-    name: "SparkIcon",
+    name: "SparkComponentIcon",
     platforms: [
         .iOS(.v16)
     ],
     products: [
         .library(
-            name: "SparkIcon",
-            targets: ["SparkIcon"]
+            name: "SparkComponentIcon",
+            targets: ["SparkComponentIcon"]
         ),
         .library(
-            name: "SparkIconTesting",
-            targets: ["SparkIconTesting"]
+            name: "SparkComponentIconTesting",
+            targets: ["SparkComponentIconTesting"]
         )
     ],
     dependencies: [
@@ -33,7 +33,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SparkIcon",
+            name: "SparkComponentIcon",
             dependencies: [
                 .product(
                     name: "SparkCommon",
@@ -47,9 +47,9 @@ let package = Package(
             path: "Sources/Core"
         ),
         .target(
-            name: "SparkIconTesting",
+            name: "SparkComponentIconTesting",
             dependencies: [
-                "SparkIcon",
+                "SparkComponentIcon",
                 .product(
                     name: "SparkCommon",
                     package: "spark-ios-common"
@@ -70,10 +70,10 @@ let package = Package(
             path: "Sources/Testing"
         ),
         .testTarget(
-            name: "SparkIconUnitTests",
+            name: "SparkComponentIconUnitTests",
             dependencies: [
-                "SparkIcon",
-                "SparkIconTesting",
+                "SparkComponentIcon",
+                "SparkComponentIconTesting",
                 .product(
                     name: "SparkCommonTesting",
                     package: "spark-ios-common"
@@ -86,10 +86,10 @@ let package = Package(
             path: "Tests/UnitTests"
         ),
         .testTarget(
-            name: "SparkIconSnapshotTests",
+            name: "SparkComponentIconSnapshotTests",
             dependencies: [
-                "SparkIcon",
-                "SparkIconTesting",
+                "SparkComponentIcon",
+                "SparkComponentIconTesting",
                 .product(
                     name: "SparkCommonSnapshotTesting",
                     package: "spark-ios-common"

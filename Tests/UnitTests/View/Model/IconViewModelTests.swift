@@ -1,6 +1,6 @@
 //
 //  IconViewModelTests.swift
-//  SparkIcon
+//  SparkComponentIcon
 //
 //  Created by Jacklyn Situmorang on 25.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
@@ -8,8 +8,8 @@
 
 import Combine
 import XCTest
-@testable import SparkIcon
-@_spi(SI_SPI) @testable import SparkIconTesting
+@testable import SparkComponentIcon
+@_spi(SI_SPI) @testable import SparkComponentIconTesting
 @_spi(SI_SPI) import SparkThemingTesting
 
 final class IconViewModelTests: XCTestCase {

@@ -1,6 +1,6 @@
 //
 //  IconAccessibilityIdentifier.swift
-//  SparkIcon
+//  SparkComponentIcon
 //
 //  Created by Jacklyn Situmorang on 20.07.23.
 //  Copyright © 2023 Leboncoin. All rights reserved.
