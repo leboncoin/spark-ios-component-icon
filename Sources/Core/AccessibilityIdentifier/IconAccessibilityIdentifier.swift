@@ -2,8 +2,8 @@
 //  IconAccessibilityIdentifier.swift
 //  SparkComponentIcon
 //
-//  Created by Jacklyn Situmorang on 20.07.23.
-//  Copyright © 2023 Leboncoin. All rights reserved.
+//  Created by robin.lemaire on 06/11/2025.
+//  Copyright © 2025 Leboncoin. All rights reserved.
 //
 
 import Foundation
