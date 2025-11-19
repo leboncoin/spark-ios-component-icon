@@ -35,7 +35,7 @@ public enum IconIntent: Equatable {
     // MARK: - Properties
 
     /// The default case. Equals to **.basic**.
-    static var `default`: Self = .basic
+    public static var `default`: Self = .basic
 
     // MARK: - Equatable
 

@@ -28,7 +28,7 @@ public enum IconSize: Equatable {
     // MARK: - Properties
 
     /// The default case. Equals to **.medium**.
-    static var `default`: Self = .medium
+    public static var `default`: Self = .medium
 
     // MARK: - Equatable
 
