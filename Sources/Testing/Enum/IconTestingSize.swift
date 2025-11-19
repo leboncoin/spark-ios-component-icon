@@ -17,7 +17,7 @@
 
     // MARK: - Properties
 
-    public static var `default`: Self = .medium
+    public static let `default`: Self = .medium
 
     public var toSize: IconSize {
         switch self {
