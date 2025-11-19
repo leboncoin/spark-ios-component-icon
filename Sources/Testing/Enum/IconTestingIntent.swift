@@ -24,7 +24,7 @@ import SparkTheming
 
     // MARK: - Properties
 
-    public static var `default`: Self = .basic
+    public static let `default`: Self = .basic
 
     // MARK: - Methods
 
