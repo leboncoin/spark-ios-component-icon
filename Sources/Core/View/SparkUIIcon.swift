@@ -11,25 +11,18 @@ import SparkTheming
 @_spi(SI_SPI) import SparkCommon
 import Combine
 
-/// The Icon shows a value on a colored scale.
-///
-/// The Icon is a non-interactive visual indicator made up of colored segments.
-/// It shows a level or value along a scale (e.g., from “low” to “high”).
+/// The Icon shows a colored and scaled icon image.
 ///
 /// ## Example of usage
 /// 
 /// ```swift
 /// let theme: SparkTheming.Theme = MyTheme()
 /// let icon = SparkUIIcon(
-///     theme: theme
+///     theme: theme,
+///     image: UIImage(systemName: "pencil")
 /// )
-/// icon.alignment = .vertical
-/// icon.isMarker = false
-/// icon.segments = .three
+/// icon.intent = .main
 /// icon.size = .small
-/// icon.intent = .veryLow
-/// icon.title = "My Icon"
-/// icon.descriptionString = "The description of the gauge"
 /// self.addSubview(icon)
 /// ```
 ///
