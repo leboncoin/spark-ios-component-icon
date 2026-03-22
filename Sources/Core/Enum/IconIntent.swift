@@ -15,8 +15,6 @@ public enum IconIntent: Equatable {
     case accent
     /// Use the **feedback** colors on current theme.
     case alert
-    /// Use the **basic** colors on current theme.
-    case basic
     /// Use the **feedback** colors on current theme.
     case error
     /// Use the **feedback** colors on current theme.
@@ -34,8 +32,8 @@ public enum IconIntent: Equatable {
 
     // MARK: - Properties
 
-    /// The default case. Equals to **.basic**.
-    public static let `default`: Self = .basic
+    /// The default case. Equals to **.support**.
+    public static let `default`: Self = .support
 
     // MARK: - Equatable
 
@@ -43,7 +41,6 @@ public enum IconIntent: Equatable {
         return switch (lhs, rhs) {
         case (.accent, .accent): true
         case (.alert, .alert): true
-        case (.basic, .basic): true
         case (.error, .error): true
         case (.info, .info): true
         case (.main, .main): true

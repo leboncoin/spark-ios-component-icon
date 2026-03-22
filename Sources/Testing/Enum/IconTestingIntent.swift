@@ -13,7 +13,6 @@ import SparkTheming
 @_spi(SI_SPI) public enum IconTestingIntent: CaseIterable {
     case accent
     case alert
-    case basic
     case error
     case info
     case main
@@ -24,7 +23,7 @@ import SparkTheming
 
     // MARK: - Properties
 
-    public static let `default`: Self = .basic
+    public static let `default`: Self = .support
 
     // MARK: - Methods
 
@@ -32,7 +31,6 @@ import SparkTheming
         switch self {
         case .accent: .accent
         case .alert: .alert
-        case .basic: .basic
         case .error: .error
         case .info: .info
         case .main: .main

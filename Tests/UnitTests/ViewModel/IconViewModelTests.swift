@@ -235,7 +235,7 @@ private final class Stub {
     // MARK: - Given
 
     let givenTheme = ThemeGeneratedMock.mocked()
-    let givenIntent: IconIntent = .basic
+    let givenIntent: IconIntent = .support
     let givenSize: IconSize = .medium
 
     // MARK: - Expected

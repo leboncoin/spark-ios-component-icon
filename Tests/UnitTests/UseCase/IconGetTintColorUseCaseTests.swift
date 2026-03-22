@@ -36,7 +36,6 @@ final class IconGetTintColorUseCaseTests: XCTestCase {
         let testCases: [(IconIntent, any ColorToken)] = [
             (.accent, colors.accent.accent),
             (.alert, colors.feedback.alert),
-            (.basic, colors.basic.basic),
             (.error, colors.feedback.error),
             (.info, colors.feedback.info),
             (.main, colors.main.main),
