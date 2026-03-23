@@ -29,8 +29,8 @@ final class IconGetColorUseCaseDeprecatedTests: XCTestCase {
         testExecute(givenIntent: .alert, expectedColorToken: self.colorsMock.feedback.alert)
     }
 
-    func test_execute_when_icon_is_basic_case() {
-        testExecute(givenIntent: .basic, expectedColorToken: self.colorsMock.basic.basic)
+    func test_execute_when_icon_is_support_case() {
+        testExecute(givenIntent: .support, expectedColorToken: self.colorsMock.support.support)
     }
 
     func test_execute_when_icon_is_error_case() {
