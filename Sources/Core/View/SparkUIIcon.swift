@@ -50,7 +50,7 @@ public final class SparkUIIcon: UIImageView {
     /// The intent of the icon.
     /// Check the ``IconIntent`` to see the **default** value.
     ///
-    /// ![Icon rendering.](icon_intent_basic.png)
+    /// ![Icon rendering.](icon_intent_support.png)
     ///
     /// ![Icon rendering.](icon_intent_main.png)
     public var intent: IconIntent = .default {

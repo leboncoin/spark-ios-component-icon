@@ -246,7 +246,7 @@ private extension IconIntent {
     static var allCases: [Self] = [
         .accent,
         .alert,
-        .basic,
+        .support,
         .error,
         .info,
         .main,

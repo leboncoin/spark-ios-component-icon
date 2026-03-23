@@ -14,9 +14,9 @@ final class IconIntentTests: XCTestCase {
 
     // MARK: - Tests
 
-    func test_default_equals_basic() {
+    func test_default_equals_support() {
         // GIVEN / WHEN / THEN
-        XCTAssertEqual(IconIntent.default, .basic)
+        XCTAssertEqual(IconIntent.default, .support)
     }
 
     // MARK: - Equatable Tests
@@ -26,7 +26,6 @@ final class IconIntentTests: XCTestCase {
         let testCases: [(IconIntent, IconIntent)] = [
             (.accent, .accent),
             (.alert, .alert),
-            (.basic, .basic),
             (.error, .error),
             (.info, .info),
             (.main, .main),
@@ -45,10 +44,10 @@ final class IconIntentTests: XCTestCase {
         // GIVEN
         let testCases: [(IconIntent, IconIntent)] = [
             (.accent, .alert),
-            (.basic, .error),
-            (.info, .main),
-            (.neutral, .success),
-            (.support, .accent)
+            (.error, .info),
+            (.main, .neutral),
+            (.success, .support),
+            (.alert, .accent)
         ]
 
         // WHEN / THEN
