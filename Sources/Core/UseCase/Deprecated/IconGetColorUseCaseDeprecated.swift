@@ -23,7 +23,6 @@ struct IconGetColorUseCaseDeprecated: IconGetColorUseCaseDeprecatedable {
         return switch intent {
         case .accent: colors.accent.accent
         case .alert: colors.feedback.alert
-        case .support: colors.support.support
         case .error: colors.feedback.error
         case .info: colors.feedback.info
         case .main: colors.main.main
